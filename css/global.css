@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,4 +26,20 @@ ul {
 img {
   max-width: 100%;
   display: block;
+}
+
+.subtitle {
+  font-size: 12.8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 5ch;
+  word-break: break-all;
+}
+
+@media screen and (max-width: 800px) {
+  .subtitle {
+    font-size: 4.8rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
 }

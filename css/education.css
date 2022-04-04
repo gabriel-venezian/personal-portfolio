@@ -87,10 +87,6 @@
   color: #a3a3a3;
 }
 
-.education__extra {
-  margin-bottom: 6rem;
-}
-
 .education__extra h3 {
   font-size: 1.4rem;
   line-height: 1.4;
@@ -110,6 +106,10 @@
   top: -0.4rem;
 }
 
+.education__courses {
+  margin-bottom: 6rem;
+}
+
 .education__courses h3::before {
   background: url("../img/courses.svg") no-repeat center center;
 }
@@ -121,7 +121,7 @@
 .education__extra li {
   font-size: 1.8rem;
   line-height: 1.1;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .education__extra span {

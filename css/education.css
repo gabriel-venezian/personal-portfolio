@@ -1,0 +1,155 @@
+.education {
+  background-color: #141414;
+  color: #ffffff;
+}
+
+.education__container {
+  max-width: 120rem;
+  padding: 12rem 2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10rem;
+  position: relative;
+}
+
+.education__container::after {
+  content: "";
+  display: block;
+  width: 13rem;
+  height: 10rem;
+  background: url("../img/decorator.svg") no-repeat center;
+  position: absolute;
+  bottom: -5rem;
+  left: 2rem;
+}
+
+.education .subtitle {
+  color: #000000;
+  max-width: 5ch;
+}
+
+.education__text {
+  font-size: 2.4rem;
+  line-height: 1.33;
+  margin-bottom: 6rem;
+  max-width: 40ch;
+  color: #a3a3a3;
+}
+
+.education__text strong {
+  color: #ffffff;
+}
+
+.education__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.education__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #000000;
+  padding: 2rem;
+  border-radius: 0.4rem;
+}
+
+.education__degree {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 1rem;
+}
+
+.education__course-name {
+  flex: 1;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.education__course-name::before {
+  content: "";
+  width: 0.4rem;
+  height: 2rem;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  top: 0.2rem;
+  left: -2.4rem;
+}
+
+.education__educational-institution {
+  font-size: 1.8rem;
+  color: #a3a3a3;
+}
+
+.education__extra {
+  margin-bottom: 6rem;
+}
+
+.education__extra h3 {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.education__extra h3::before {
+  content: "";
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  left: -3.6rem;
+  top: -0.4rem;
+}
+
+.education__courses h3::before {
+  background: url("../img/courses.svg") no-repeat center center;
+}
+
+.education__languages h3::before {
+  background: url("../img/languages.svg") no-repeat center center;
+}
+
+.education__extra li {
+  font-size: 1.8rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.education__extra span {
+  color: #8f8f8f;
+}
+
+.education__courses li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  .education__container {
+    grid-template-columns: 1fr;
+    padding: 6rem 2rem;
+    gap: 4rem;
+  }
+
+  .education .subtitle {
+    color: #ffffff;
+  }
+
+  .education__text {
+    font-size: 1.8rem;
+  }
+
+  .education__extra h3::before {
+    position: initial;
+    margin-bottom: 1rem;
+  }
+}
